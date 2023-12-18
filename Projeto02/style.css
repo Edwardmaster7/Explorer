@@ -103,6 +103,7 @@ button:hover {
 footer {
     font-family: 'Open Sans', sans-serif;
     font-size: 14px;
+    line-height: 28px;
     font-style: normal;
     text-align: center;
     margin-top: 80px;
