@@ -202,3 +202,12 @@ fieldset legend {
 .checkbox-wrapper input:focus + label::before {
     outline: 2px solid black;
 }
+
+.footer {
+    height: 136px;
+    border-radius: 0px 0px 8px 8px;
+
+    background: #F0F0F4;
+
+    padding: 40px 64px;
+}
