@@ -19,7 +19,7 @@
                 formulário de inscrição.
             </p>
         </header>
-        <form>
+        <form id="my-form">
             <!-- inputs e estrutura do form -->
             <fieldset>
                 <div class="fieldset-wrapper">
@@ -27,17 +27,17 @@
 
                     <div class="input-wrapper">
                         <label for="event-title">Título do evento<span>(mínimo 8 caracteres)</span></label>
-                        <input type="text" id="event-title">
+                        <input required type="text" id="event-title"/>
                     </div>
 
                     <div class="input-wrapper">
                         <label for="event-link">Link do evento<span>(comece com https://)</span></label>
-                        <input type="text" id="event-link">
+                        <input type="text" id="event-link"/>
                     </div>
 
                     <div class="input-wrapper">
                         <label for="event-whatsapp">Whatsapp para contato<span>(somente números)</span></label>
-                        <input type="number" id="event-whatsapp">
+                        <input required type="number" id="event-whatsapp"/>
                     </div>
 
                     <div class="input-wrapper">
@@ -64,16 +64,16 @@
                     
                     <div class="input-wrapper">
                         <label for="admin-email">E-mail do administrador<span>(digite um email válido)</span></label>
-                        <input type="email" id="admin-email">
+                        <input required type="email" id="admin-email">
                     </div>
     
                     <div class="input-wrapper">
                         <label for="event-password">Senha de acesso para os participantes<span>(mínimo 8 caracteres)</span></label>
-                        <input type="password" id="event-password">
+                        <input type="password" id="event-password" minlength="8"/>
                     </div>
                     
                     <div class="checkbox-wrapper">
-                        <input type="checkbox" id="event-is-private">
+                        <input type="checkbox" id="event-is-private"/>
                         <label for="event-is-private">Evento privado</label>
                         
                     </div>
@@ -86,15 +86,15 @@
                     <div class="column-3">
                         <div class="input-wrapper">
                             <label for="event-date">Data</label>
-                            <input type="date" id="event-date">
+                            <input type="date" id="event-date"/>
                         </div>
                         <div class="input-wrapper">
                             <label for="event-start-time">Das</label>
-                            <input type="time" id="event-start-time">
+                            <input type="time" id="event-start-time"/>
                         </div>
                         <div class="input-wrapper">
                             <label for="event-end-time">Até</label>
-                            <input type="time" id="event-end-time">
+                            <input type="time" id="event-end-time"/>
                         </div>
                     </div>
                 </div>
@@ -104,7 +104,7 @@
         </form>
 
         <footer>
-            <input class="button" type="submit" value="Salvar evento">
+            <input class="button" type="submit" form="my-form" value="Salvar evento"/>
         </footer>
         
     </div>   
