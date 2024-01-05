@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    font-size: 62.5%;
+
+    --color-base-white: #ffffff;
+    --color-base-gray-100: #F5F5F5;
+    --color-base-gray-200: #EEE;
+    --color-base-gray-300: #8d8d99;
+    --color-base-gray-500: #3D3D3D;
+    --color-base-gray-700: #323238;
+    --color-base-gray-900: #202024;
+
+    font-family: 'Mulish', sans-serif;
+}
+
+body {
+    font-size: 1.6rem;
+}
+
+/* #app > * {
+    border: 1px solid red;
+} */
+
+#app {
+    display: grid;
+    grid-template-rows: max-content 1fr max-content;
+    height: 100vh;
+}
+
+.container {
+    padding: 1.6rem 3.2rem;
+    width: min(112rem, 100%);
+    margin: 0 auto;
+}
+
+header {
+    color: var(--color-base-white);
+}
+
+header, nav, nav ul {
+    display: flex;
+    align-items: center;
+    gap: 7.2rem;
+    
+    font-weight: bold;
+}
+
+header form {
+    flex: 1;
+}
+
+nav ul {
+    list-style: none;
+    color: var(--color-base-gray-300);
+    font-size: 1.8rem;
+}
+
+ul li.active {
+    color: var(--color-base-gray-900);
+    
+}
+
+.input-wrapper label {
+   width: 1px;
+   height: 1px;
+   overflow: hidden;
+   position: absolute;
+}
+
+.input-wrapper input {
+    width: 100%;
+    height: 48px;
+    padding: 1.2rem 1.6rem;
+    border-radius: .5rem;
+    opacity: 0.6rem;
+    background: var(--color-base-gray-200);
+    align-items: center;
+    gap: 12px;
+
+    font-family: 'Mulish';
+    font-weight: 600;
+}
+
+.input-wrapper input::placeholder {
+    color: var(--color-base-gray-500);
+    opacity: 0.56;
+}
+
+.avatar {
+    width: 4.2rem;
+    height: 4.2rem;
+
+    object-fit: cover;
+
+    border-radius: 50%;
+}
+
+footer {
+    text-align: center;
+    padding: 1.6rem;
+}
+
+footer p {
+    text-align: center;
+    padding: 1.6rem;
+    font-weight: 600;
+}
+
+main {
+    background: var(--color-base-gray-100);
+
+    overflow-y: scroll;
+}
+
+main h1 {
+    color: var(--color-base-gray-900);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 160%;
+}
+
+section {
+    display: grid;
+    
+    justify-content: column;
+}
