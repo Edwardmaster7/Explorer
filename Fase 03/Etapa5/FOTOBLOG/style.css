@@ -58,14 +58,19 @@ header form {
 
 nav ul {
     list-style: none;
-    color: var(--color-base-gray-300);
     font-size: 1.8rem;
 }
 
-ul li.active {
-    color: var(--color-base-gray-900);
-    
+ul li a{
+    text-decoration: none;
+    color: var(--color-base-gray-300);
 }
+
+ul li a.active {
+    color: var(--color-base-gray-900);
+}
+
+
 
 .input-wrapper label {
    width: 1px;
@@ -102,6 +107,82 @@ ul li.active {
     border-radius: 50%;
 }
 
+/* galeria */
+main h1 {
+    color: var(--color-base-gray-900);
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 160%;
+    padding-top: 1.6rem;
+}
+
+main {
+    background: var(--color-base-gray-100);
+
+    overflow-y: scroll;
+}
+
+.gallery {
+    margin-top: 3.2rem;
+    
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2.2rem;
+
+    background: var(--color-base-gray-100);
+}
+
+.item {
+    border-radius: .8rem;
+    overflow: hidden;
+}
+
+.item img{
+    width: 100%;
+    aspect-ratio: 16/9;
+    object-fit: cover;
+
+    /* transition-property: filter, transform;
+    transition-duration: .3s;
+    transition-delay: 0;
+    transition-timing-function: ease-out; */
+
+    transition: all 200ms ease-out;
+}
+
+.item img:hover {
+    filter: hue-rotate(14deg) contrast(101%) saturate(200%); 
+    transform: scale(1.1);
+}
+
+.details {
+    padding: 2.2rem;
+    
+    z-index: 1;
+    position: relative;
+
+    background: var(--color-base-white);
+}
+
+.details h2 {
+    font-size: 1.8rem;
+}
+
+.tags {
+    margin-top: 1.2rem;
+}
+
+.tags span {
+    padding: .6rem;
+    background: var(--color-base-gray-100);
+    border-radius: .6rem;
+    
+    line-height: 0;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
 footer {
     text-align: center;
     padding: 1.6rem;
@@ -111,23 +192,4 @@ footer p {
     text-align: center;
     padding: 1.6rem;
     font-weight: 600;
-}
-
-main {
-    background: var(--color-base-gray-100);
-
-    overflow-y: scroll;
-}
-
-main h1 {
-    color: var(--color-base-gray-900);
-    font-size: 24px;
-    font-weight: 700;
-    line-height: 160%;
-}
-
-section {
-    display: grid;
-    
-    justify-content: column;
 }
