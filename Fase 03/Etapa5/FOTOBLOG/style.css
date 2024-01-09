@@ -148,6 +148,8 @@ main {
     transition-timing-function: ease-out; */
 
     transition: all 200ms ease-out;
+
+    display: block;
 }
 
 .item img:hover {
@@ -192,4 +194,39 @@ footer p {
     text-align: center;
     padding: 1.6rem;
     font-weight: 600;
+}
+
+/* animations */
+
+header {
+    --startY: -100%;
+    animation: move .6s;
+}
+
+footer {
+    --startY: 100%;
+    animation: move .2s ease-in-out;
+}
+
+.item {
+    --delay: .4; 
+    animation: appear .2s  var(--delay) ease-in backwards;
+} 
+
+
+@keyframes move {
+    from {
+        transform: translateY(var(--startY));
+    }
+}
+
+@keyframes appear {
+    0% {
+        opacity: 0;
+        transform: scale(0,1);
+    }
+    50% {
+        transform: scale(1,2);
+    }
+
 }
