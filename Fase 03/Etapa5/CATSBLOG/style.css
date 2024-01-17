@@ -64,7 +64,7 @@ form {
     width: 1px; 
     height: 1px;
     overflow: hidden;
-    position: absolute;
+    position: fixed;
 }
 
 .input-wrapper input {
@@ -94,8 +94,9 @@ main {
 }
 
 main img {
-    width: 100%;
-    object-fit: cover;
+    width: 105%;
+    display: block;
+    padding: 0;
 }
 
 .container {
@@ -126,7 +127,7 @@ main img {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    gap: 8px;
+    gap: .8rem;
     
     padding-bottom: 3.2rem;
 }
@@ -149,11 +150,17 @@ p {
 figure {
     display: flex;
     gap: 1.6rem;
+    padding: .4rem;
 }
 
 figure img {
     width: 16rem;
     height: 9rem;
+    border-radius: .5rem;
+
+    transition: all 200ms ease-in-out;
+
+    /* display: block; */
 }
 
 figcaption h2 {
@@ -202,3 +209,38 @@ footer p {
     display: flex;
     align-items: center;
 }
+
+figure:hover img {
+    transform: scale(1.1);
+    filter: contrast(101%) saturate(150%);
+}
+
+figure:hover {
+    cursor: pointer;
+}
+
+button:hover {
+    filter: brightness(1.2);
+    cursor: pointer;
+}
+
+/* @media screen and (min-width: 1000px) {
+    main {
+        padding-top: 7.2rem;
+        display: grid;
+        grid-template-columns: 55vw 1fr;
+        justify-content: space-around;
+
+        padding: 12rem;
+    }
+
+    main img {
+        width: auto;
+        max-width: 80rem;
+    }
+
+    .container {
+        padding: 0;
+    }
+
+} */
