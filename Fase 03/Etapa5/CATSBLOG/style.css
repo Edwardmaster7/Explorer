@@ -76,6 +76,8 @@ form {
 
     width: 100%;
     font-weight: 400;
+
+    color: var(--color-base-white);
 }
 
 .input-wrapper input::placeholder {
@@ -181,7 +183,7 @@ footer {
     display: flex;
 
     width: 100%;
-    height: 6.4rem;
+    height: 4rem;
 
     padding: 1.6rem;
 
