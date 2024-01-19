@@ -1,21 +1,13 @@
-//  Variables and data types
-// declaration
-var name
+let weight
 
-// assignment
-name = "Mike"
+console.log(typeof weight)
 
-// que tipo de dado foi armazenado na variável
-console.log(typeof name)
+const student {
 
-// let age = 20
-// let isHuman = true
+}
+let name = 'Bryan'
+let age = 14
+let stars = 5
+let isSubscribed = true
 
-// declaration grouping
-let age, isHuman
-
-age = 18
-isHuman = true
-
-
-console.log(name, age, isHuman)
+console.log(typeof )
