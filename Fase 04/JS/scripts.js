@@ -2,12 +2,11 @@ let weight
 
 console.log(typeof weight)
 
-const student {
-
+const student = {
+    name: 'Bryan',
+    age: 14,
+    stars: 5,
+    isSubscribed: true
 }
-let name = 'Bryan'
-let age = 14
-let stars = 5
-let isSubscribed = true
 
-console.log(typeof )
+console.log(typeof student)
