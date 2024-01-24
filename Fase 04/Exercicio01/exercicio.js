@@ -7,16 +7,26 @@
 let templatePrompt = {
     firstValue: 'CALCULATOR:\nEnter the first value:',
     operation: 'Operation: (+, -, *, / or %)',
-    secondValue: 'Enter the second value:'
+    secondValue: 'Enter the second value:',
+    newCalculation: 'Want to calculate more? (0 = yes, 1 = false)'
 }
 
-let num1 = Number(prompt(templatePrompt.firstValue))
-let op = prompt(templatePrompt.operation)
-let num2 = Number(prompt(templatePrompt.secondValue))
+let num1 = 0
+let op = ""
+let num2 = 0
 let result = 0
+let newCalc = true75
 
-// change alert message
-alert(`${num1} ${op} ${num2} = ${calculator(num1, num2, op)}`)
+do {
+    num1 = Number(prompt(templatePrompt.firstValue))
+    op = prompt(templatePrompt.operation)
+    num2 = Number(prompt(templatePrompt.secondValue))
+
+    alert(`${num1} ${op} ${num2} = ${calculator(num1, num2, op)}`)
+    newCalc = (prompt(templatePrompt.newCalculation) == '0' ? true : false)
+    console.log(newCalc)
+} while (newCalc != false)
+
 
 // let sum = num1 + num2
 // let sub = num1 - num2
