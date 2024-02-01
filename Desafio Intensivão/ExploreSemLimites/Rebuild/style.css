@@ -1,0 +1,23 @@
+* {
+    margin: 0;
+    padding: 0;
+
+    /* instruções para deixar as fontes mais bonitas */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+:root {
+    font-size: 62.5%;
+    font-family: 'Mulish', sans-serif;
+
+    --purple-principal: #B52184;
+    --dark-purple: #312D64;
+    --white-principal: #F9F4FB;
+    --dark-purple-2: linear-gradient(96deg, #343193 0%, #302C63 99.68%);
+}
+
+#app {
+    width: 100%;
+    margin: 0 auto;
+}
