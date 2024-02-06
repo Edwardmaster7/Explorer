@@ -19,18 +19,22 @@ function handleTryClick(event) {
     console.log(`handleClick called, gen=${randomNumber}`)
     console.log(input.value)
 
-    if (Number(input.value) == randomNumber) {   
-        screen1.classList.add("hide")
-        screen2.classList.remove("hide")
+    if (Number(input.value) == randomNumber) {
+        toggleScreen()
 
         screen2.querySelector("h2").innerText = `Acertou em ${xAttempts} tentativas!`
 
         console.log(`correct in ${xAttempts} atempts`)
-    } 
+    }
     xAttempts++
     input.value = ""
 }
 
 function handleResetClick(event) {
     console.log('handleReset called')
+}
+
+function toggleScreen() {
+    screen1.classList.toggle("hide")
+    screen2.classList.toggle("hide")
 }
