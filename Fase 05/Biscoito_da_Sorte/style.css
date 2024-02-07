@@ -27,7 +27,6 @@ body {
 main {
     background-color: #FFF;
 
-    padding: 4.8rem 6.4rem 6.4rem;
     width: min(42.8rem, 90%);
 
     text-align: center;
@@ -41,6 +40,8 @@ h1 {
     font-family: 'Montserrat', sans-serif;
     font-size: 2.4rem;
     font-weight: bold;
+
+    color: #34355B;
 }
 
 p {
@@ -48,6 +49,8 @@ p {
     font-size: 1.6rem;
     line-height: auto;
     font-weight: regular;
+
+    color: #34355B;
 }
 
 div p {
@@ -56,6 +59,64 @@ div p {
 
 div img {
     margin-top: 2rem;
+    width: min(42.8rem, 100%);
 }
 
+#open-other-cookie {
+    margin-top: 1.6rem;
+    padding: 1.6rem;
+    border-radius: .5rem;
+    border: none;
 
+    color: white;
+    background-color: #FF9500;
+
+    font-family: 'DM Sans', sans-serif;
+    font-size: 1.6rem;
+    line-height: auto;
+    font-weight: bold;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    padding: 1rem;
+
+    margin-top: 1.6rem;
+
+    /* width: min(42.8rem, 100%); */
+    /* height: min(42.8rem, 100%); */
+
+    background-color: #E4EDF1;
+
+    border-radius:.2rem;
+
+    box-shadow: .2rem .2rem rgba(0, 0, 0, 0.3) ;   
+}
+
+.card p {
+    font-family: 'Dancing Script', sans-serif;
+    font-size: 2.4rem;
+    line-height: auto;
+    font-weight: normal;
+
+    margin: 0;
+
+    color: black;
+}
+
+.screen1 {
+    padding: 4.8rem 6.4rem 6.4rem;
+}
+
+.screen2 {
+    padding: 4.8rem 6.4rem;
+}
+
+.screen1 button {
+    border: none;
+    background-color: #FFF;
+}
